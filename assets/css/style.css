@@ -1,0 +1,246 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fff8f3;
+}
+
+.bg-banner {
+    background: linear-gradient(127deg,
+            rgba(244, 229, 244, 1) 0%,
+            rgba(249, 250, 253, 1) 50%,
+            rgba(245, 238, 236, 1) 81%,
+            rgba(239, 249, 250, 1) 100%);
+}
+
+/* ---------- Scroll reveal ---------- */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.reveal-bg-gradient {
+    background: linear-gradient(115deg,
+            rgba(32, 168, 202, 1) 0%,
+            rgba(77, 187, 214, 1) 52%,
+            rgba(255, 130, 184, 1) 51%,
+            rgba(248, 61, 142, 1) 100%);
+}
+
+.reveal.desconto {
+    background: linear-gradient(113deg,
+            rgba(32, 168, 202, 1) 0%,
+            rgba(32, 168, 202, 1) 50%,
+            rgb(236 72 153) 50%);
+}
+
+.reveal.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.85);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-scale.reveal-visible {
+    opacity: 1;
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-left.reveal-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-right.reveal-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.stagger-child {
+    transition-delay: calc(var(--i) * 120ms);
+}
+
+/* ---------- Hero blob / floating ice cream ---------- */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-18px) rotate(2deg);
+    }
+}
+
+.float-anim {
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes floatSlow {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.float-slow {
+    animation: floatSlow 4s ease-in-out infinite;
+}
+
+@keyframes spinSlow {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-slow {
+    animation: spinSlow 18s linear infinite;
+}
+
+/* ---------- Carousel ---------- */
+.carousel-track {
+    transition: transform 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+/* .carousel-slide {
+    flex: 0 0 100%;
+} */
+/* 
+@media (min-width: 768px) {
+    .carousel-slide-3 {
+        flex: 0 0 33.3333%;
+    }
+} */
+/* 
+.dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 9999px;
+    background: #e9d5ff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.dot.active {
+    width: 26px;
+    background: #ec4899;
+}
+
+/* product card hover */
+.product-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px -12px rgba(124, 58, 237, 0.25);
+}
+
+.cat-card img {
+    transition: transform 0.5s ease;
+}
+
+.cat-card:hover img {
+    transform: scale(1.08);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #7c3aed, #ec4899);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px -8px rgba(236, 72, 153, 0.5);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e9d5ff;
+    border-radius: 8px;
+}
+
+
+/* Ajustes para os elementos SVG em mobile */
+@media (max-width: 768px) {
+
+    .svg-anim-1,
+    .svg-anim-2,
+    .svg-anim-3 {
+        display: block;
+        opacity: 0.6;
+    }
+
+    .svg-anim-1 {
+        width: 60px;
+        right: 10px;
+        bottom: 0;
+    }
+
+    .svg-anim-2 {
+        width: 40px;
+        position: relative;
+        margin-top: 1rem;
+    }
+
+    .svg-anim-3 {
+        width: 50px;
+    }
+
+    .circle-anim {
+        top: 30px !important;
+        width: 300px !important;
+        height: 300px !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .circle-anim {
+        top: 40px;
+    }
+
+    .svg-anim-1 {
+        width: 80px;
+    }
+
+    .svg-anim-2 {
+        width: 60px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .circle-anim {
+        top: 60px;
+    }
+}

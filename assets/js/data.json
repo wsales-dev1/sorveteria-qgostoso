@@ -1,0 +1,1009 @@
+[
+    {
+        "id": 1,
+        "name": "Casquinha",
+        "price": 3.50,
+        "img": "assets/img/casquinha.webp",
+        "categoria": {
+            "comum": [
+                {
+                    "id": 1,
+                    "name": "Baunilha",
+                    "img": "assets/img/casquinhas/casquinha_baunilha.webp",
+                    "badge": "Oferta",
+                    "color": "text-blue-300 to-cyan-500/20",
+                    "bg_color": "from-blue-500/20 to-cyan-500/20"
+                },
+                {
+                    "id": 2,
+                    "name": "Chocolate",
+                    "img": "assets/img/casquinhas/casquinha_chocolate.webp",
+                    "badge": "Oferta",
+                    "color": "text-emerald-300 to-teal-500/20",
+                    "bg_color": "from-emerald-500/20 to-teal-500/20"
+                },
+                {
+                    "id": 3,
+                    "name": "Chocolate & Baunilha",
+                    "img": "assets/img/casquinhas/casquinha_mista.webp",
+                    "badge": "Oferta",
+                    "color": "text-rose-300 to-pink-500/20",
+                    "bg_color": "from-rose-500/20 to-pink-500/20"
+                }
+            ],
+            "especial": [
+                {
+                    "id": 1,
+                    "name": "Chocolate c/ Amendoim",
+                    "img": "assets/img/casquinhas/casquinha-E_amendoim.webp",
+                    "badge": "Oferta",
+                    "color": "text-blue-300 to-cyan-500/20",
+                    "bg_color": "from-blue-500/20 to-cyan-500/20"
+                },
+                {
+                    "id": 2,
+                    "name": "Baunilha c/ chobobol",
+                    "img": "assets/img/casquinhas/casquinha-E_chocobol.webp",
+                    "badge": "Oferta",
+                    "color": "text-emerald-300 to-teal-500/20",
+                    "bg_color": "from-emerald-500/20 to-teal-500/20"
+                },
+                {
+                    "id": 3,
+                    "name": "Chocolate c/ cobertura de chocolate",
+                    "img": "assets/img/casquinhas/casquinha-E_cobertura-chocolate.webp",
+                    "badge": "Oferta",
+                    "color": "text-rose-300 to-pink-500/20",
+                    "bg_color": "from-rose-500/20 to-pink-500/20"
+                },
+                {
+                    "id": 4,
+                    "name": "Baunilha c/ Nutella",
+                    "img": "assets/img/casquinhas/casquinha-E_nutella.webp",
+                    "badge": "Oferta",
+                    "color": "text-amber-300 to-yellow-500/20",
+                    "bg_color": "from-amber-500/20 to-yellow-500/20"
+                },
+                {
+                    "id": 5,
+                    "name": "Chocolate c/ Brigadeiro",
+                    "img": "assets/img/casquinhas/casquinha-E_trufado_brigadeiro.webp",
+                    "badge": "Oferta",
+                    "color": "text-red-300 to-orange-500/20",
+                    "bg_color": "from-red-500/20 to-orange-500/20"
+                },
+                {
+                    "id": 6,
+                    "name": "Baunilha c/ coco",
+                    "img": "assets/img/casquinhas/casquinha-E_trufado_com_coco.webp",
+                    "badge": "Oferta",
+                    "color": "text-lime-300 to-green-500/20",
+                    "bg_color": "from-lime-500/20 to-green-500/20"
+                },
+                {
+                    "id": 7,
+                    "name": "Baunilha c/ ovomaltine",
+                    "img": "assets/img/casquinhas/casquinha-E_trufado_com_ovomaltine.webp",
+                    "badge": "Oferta",
+                    "color": "text-emerald-300 to-teal-500/20",
+                    "bg_color": "from-emerald-500/20 to-teal-500/20"
+                }
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "name": "Cascão",
+        "price": 4.99,
+        "img": "assets/img/cascao.webp",
+        "categoria": {
+            "comum": [
+                {
+                    "id": 1,
+                    "name": "Misto c/ Amendoim",
+                    "img": "assets/img/cascao/cascao_cobertura_chocolate.webp",
+                    "badge": "Oferta",
+                    "color": "text-blue-300 to-cyan-500/20",
+                    "bg_color": "from-blue-500/20 to-cyan-500/20"
+                },
+                {
+                    "id": 2,
+                    "name": "Morango c/ Confetti",
+                    "img": "assets/img/cascao/cascao_cobertura_morango.webp",
+                    "badge": "Novo",
+                    "color": "text-emerald-300 to-teal-500/20",
+                    "bg_color": "from-emerald-500/20 to-teal-500/20"
+                }
+            ],
+            "especial": [
+                {
+                    "id": 1,
+                    "name": "Trufado C/ Nutella e Amendoim",
+                    "img": "assets/img/cascao/cascao_cobertura_trufado.webp",
+                    "badge": "Premium",
+                    "color": "text-rose-300 to-pink-500/20",
+                    "bg_color": "from-rose-500/20 to-pink-500/20"
+                },
+                {
+                    "id": 2,
+                    "name": "Trufado C/ Ovomaltine",
+                    "img": "assets/img/cascao/cascao_trufado_ovomaltine.webp",
+                    "badge": "Importado",
+                    "color": "text-amber-300 to-yellow-500/20",
+                    "bg_color": "from-amber-500/20 to-yellow-500/20"
+                },
+                {
+                    "id": 3,
+                    "name": "Trufado C/ Brigadeiro",
+                    "img": "assets/img/cascao/cascao_trufado_brigadeiro.webp",
+                    "badge": "Oferta",
+                    "color": "text-red-300 to-orange-500/20",
+                    "bg_color": "from-red-500/20 to-orange-500/20"
+                },
+                {
+                    "id": 4,
+                    "name": "Trufado C/ Nutella",
+                    "img": "assets/img/cascao/cascao_trufado_nutella.webp",
+                    "badge": "Oferta",
+                    "color": "text-lime-300 to-green-500/20",
+                    "bg_color": "from-lime-500/20 to-green-500/20"
+                },
+                {
+                    "id": 5,
+                    "name": "Trufado C/ Amendoim",
+                    "img": "assets/img/cascao/cascao_trufado_amendoim.webp",
+                    "badge": "Oferta",
+                    "color": "text-emerald-300 to-teal-500/20",
+                    "bg_color": "from-emerald-500/20 to-teal-500/20"
+                },
+                {
+                    "id": 6,
+                    "name": "Trufado C/ Nutella e Banana",
+                    "img": "assets/img/cascao/cascao_trufado_nutella_banana.webp",
+                    "badge": "Oferta",
+                    "color": "text-cyan-300 to-sky-500/20",
+                    "bg_color": "from-cyan-500/20 to-sky-500/20"
+                },
+                {
+                    "id": 7,
+                    "name": "Calda Quente C/ Chocolate",
+                    "img": "assets/img/cascao/cascao_calda_quente.webp",
+                    "badge": "Oferta",
+                    "color": "text-blue-300 to-indigo-500/20",
+                    "bg_color": "from-blue-500/20 to-indigo-500/20"
+                }
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "name": "Sundaes",
+        "price": 4.99,
+        "img": "assets/img/sundae.webp",
+        "categoria": {
+            "comum": [
+                {
+                    "id": 1,
+                    "name": "Brigadeiro",
+                    "img": "assets/img/sundae/bricadeiro.webp",
+                    "badge": "Oferta",
+                    "color": "text-purple-300 to-pink-500/20",
+                    "bg_color": "from-purple-500/20 to-pink-500/20"
+                },
+                {
+                    "id": 2,
+                    "name": "Caramelo com Amendoim",
+                    "img": "assets/img/sundae/caramelo_c_amendoim.webp",
+                    "badge": "Oferta",
+                    "color": "text-amber-300 to-orange-500/20",
+                    "bg_color": "from-amber-500/20 to-orange-500/20"
+                },
+                {
+                    "id": 3,
+                    "name": "Chocoboll",
+                    "img": "assets/img/sundae/chocoboll.webp",
+                    "badge": "Oferta",
+                    "color": "text-yellow-300 to-orange-500/20",
+                    "bg_color": "from-yellow-500/20 to-orange-500/20"
+                },
+                {
+                    "id": 4,
+                    "name": "Chocolate com Amendoim",
+                    "img": "assets/img/sundae/chocolate_c_amendoim.webp",
+                    "badge": "Oferta",
+                    "color": "text-stone-300 to-amber-700/20",
+                    "bg_color": "from-stone-700/20 to-amber-700/20"
+                },
+                {
+                    "id": 5,
+                    "name": "Confetti",
+                    "img": "assets/img/sundae/confetti.webp",
+                    "badge": "Oferta",
+                    "color": "text-pink-300 to-violet-500/20",
+                    "bg_color": "from-pink-500/20 to-violet-500/20"
+                },
+                {
+                    "id": 6,
+                    "name": "Crocante de Amendoim",
+                    "img": "assets/img/sundae/crocante_de_amendoim.webp",
+                    "badge": "Oferta",
+                    "color": "text-orange-300 to-yellow-600/20",
+                    "bg_color": "from-orange-500/20 to-yellow-500/20"
+                },
+                {
+                    "id": 7,
+                    "name": "Farofa",
+                    "img": "assets/img/sundae/farofa.webp",
+                    "badge": "Oferta",
+                    "color": "text-yellow-200 to-amber-600/20",
+                    "bg_color": "from-yellow-500/20 to-amber-500/20"
+                },
+                {
+                    "id": 8,
+                    "name": "Festa",
+                    "img": "assets/img/sundae/festa.webp",
+                    "badge": "Oferta",
+                    "color": "text-red-300 to-fuchsia-500/20",
+                    "bg_color": "from-red-500/20 to-fuchsia-500/20"
+                },
+                {
+                    "id": 9,
+                    "name": "Morango com Amendoim",
+                    "img": "assets/img/sundae/morango_c_amendoim.webp",
+                    "badge": "Oferta",
+                    "color": "text-rose-300 to-red-500/20",
+                    "bg_color": "from-rose-500/20 to-red-500/20"
+                },
+                {
+                    "id": 10,
+                    "name": "Negresco",
+                    "img": "assets/img/sundae/negresco.webp",
+                    "badge": "Oferta",
+                    "color": "text-slate-300 to-zinc-600/20",
+                    "bg_color": "from-slate-600/20 to-zinc-700/20"
+                },
+                {
+                    "id": 11,
+                    "name": "Ovomaltine",
+                    "img": "assets/img/sundae/ovomaltine.webp",
+                    "badge": "Oferta",
+                    "color": "text-red-300 to-yellow-600/20",
+                    "bg_color": "from-red-500/20 to-yellow-500/20"
+                }
+            ],
+            "especial": [
+                {
+                    "id": 1,
+                    "name": "Abacaxi ao Vinho",
+                    "img": "assets/img/sundae/especial/abacaxi_ao_vinho.webp",
+                    "badge": "Oferta",
+                    "color": "text-yellow-300 to-red-500/20",
+                    "bg_color": "from-yellow-500/20 to-red-500/20"
+                },
+                {
+                    "id": 2,
+                    "name": "Abacaxi Polpa",
+                    "img": "assets/img/sundae/especial/abacaxi_polpa.webp",
+                    "badge": "Oferta",
+                    "color": "text-lime-300 to-yellow-500/20",
+                    "bg_color": "from-lime-500/20 to-yellow-500/20"
+                },
+                {
+                    "id": 3,
+                    "name": "Amora",
+                    "img": "assets/img/sundae/especial/amora.webp",
+                    "badge": "Oferta",
+                    "color": "text-purple-300 to-fuchsia-500/20",
+                    "bg_color": "from-purple-500/20 to-fuchsia-500/20"
+                },
+                {
+                    "id": 4,
+                    "name": "Framboesa",
+                    "img": "assets/img/sundae/especial/framboesa.webp",
+                    "badge": "Oferta",
+                    "color": "text-rose-300 to-pink-500/20",
+                    "bg_color": "from-rose-500/20 to-pink-500/20"
+                },
+                {
+                    "id": 5,
+                    "name": "Limão",
+                    "img": "assets/img/sundae/especial/limao.webp",
+                    "badge": "Oferta",
+                    "color": "text-green-300 to-emerald-500/20",
+                    "bg_color": "from-green-500/20 to-emerald-500/20"
+                },
+                {
+                    "id": 6,
+                    "name": "Maracujá",
+                    "img": "assets/img/sundae/especial/maracuja.webp",
+                    "badge": "Oferta",
+                    "color": "text-yellow-300 to-orange-500/20",
+                    "bg_color": "from-yellow-500/20 to-orange-500/20"
+                },
+                {
+                    "id": 7,
+                    "name": "Morango Polpa",
+                    "img": "assets/img/sundae/especial/morango_polpa.webp",
+                    "badge": "Oferta",
+                    "color": "text-red-300 to-pink-500/20",
+                    "bg_color": "from-red-500/20 to-pink-500/20"
+                },
+                {
+                    "id": 8,
+                    "name": "Sensação",
+                    "img": "assets/img/sundae/especial/sensacao.webp",
+                    "badge": "Oferta",
+                    "color": "text-pink-300 to-purple-500/20",
+                    "bg_color": "from-pink-500/20 to-purple-500/20"
+                },
+                {
+                    "id": 9,
+                    "name": "Hortelã",
+                    "img": "assets/img/sundae/especial/hortela.webp",
+                    "badge": "Oferta",
+                    "color": "text-green-300 to-emerald-500/20",
+                    "bg_color": "from-green-500/20 to-emerald-500/20"
+                }
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "name": "Milkshakes",
+        "price": 4.99,
+        "img": "assets/img/shake.webp",
+        "categoria": {
+            "comum": [
+                {
+                    "id": 1,
+                    "name": "Abacaxi ao Vinho",
+                    "img": "assets/img/milkshake/abacaxi_ao_vinho.webp",
+                    "badge": "Oferta",
+                    "color": "text-fuchsia-300",
+                    "bg_color": "bg-gradient-to-r from-fuchsia-500/20 to-purple-500/20"
+                },
+                {
+                    "id": 2,
+                    "name": "Abacaxi com Hortelã",
+                    "img": "assets/img/milkshake/abacaxi_c_hortela.webp",
+                    "badge": "Oferta",
+                    "color": "text-emerald-300",
+                    "bg_color": "bg-gradient-to-r from-emerald-500/20 to-lime-500/20"
+                },
+                {
+                    "id": 3,
+                    "name": "Algodão Doce",
+                    "img": "assets/img/milkshake/algodao_doce.webp",
+                    "badge": "Oferta",
+                    "color": "text-pink-300",
+                    "bg_color": "bg-gradient-to-r from-pink-500/20 to-sky-500/20"
+                },
+                {
+                    "id": 4,
+                    "name": "Ameixa",
+                    "img": "assets/img/milkshake/ameixa.webp",
+                    "badge": "Oferta",
+                    "color": "text-violet-300",
+                    "bg_color": "bg-gradient-to-r from-violet-500/20 to-fuchsia-500/20"
+                },
+                {
+                    "id": 5,
+                    "name": "Amendoim",
+                    "img": "assets/img/milkshake/amendoim.webp",
+                    "badge": "Oferta",
+                    "color": "text-amber-300",
+                    "bg_color": "bg-gradient-to-r from-amber-500/20 to-orange-500/20"
+                },
+                {
+                    "id": 6,
+                    "name": "Amora",
+                    "img": "assets/img/milkshake/amora.webp",
+                    "badge": "Oferta",
+                    "color": "text-purple-300",
+                    "bg_color": "bg-gradient-to-r from-purple-500/20 to-pink-500/20"
+                },
+                {
+                    "id": 7,
+                    "name": "Banana",
+                    "img": "assets/img/milkshake/banana.webp",
+                    "badge": "Oferta",
+                    "color": "text-yellow-300",
+                    "bg_color": "bg-gradient-to-r from-yellow-500/20 to-amber-500/20"
+                },
+                {
+                    "id": 8,
+                    "name": "Banoffe",
+                    "img": "assets/img/milkshake/banoffe.webp",
+                    "badge": "Oferta",
+                    "color": "text-orange-300",
+                    "bg_color": "bg-gradient-to-r from-orange-500/20 to-yellow-500/20"
+                },
+                {
+                    "id": 9,
+                    "name": "Beijinho",
+                    "img": "assets/img/milkshake/beijinho.webp",
+                    "badge": "Oferta",
+                    "color": "text-rose-200",
+                    "bg_color": "bg-gradient-to-r from-rose-500/20 to-pink-500/20"
+                },
+                {
+                    "id": 10,
+                    "name": "Brigadeiro",
+                    "img": "assets/img/milkshake/brigadeiro.webp",
+                    "badge": "Oferta",
+                    "color": "text-stone-200",
+                    "bg_color": "bg-gradient-to-r from-stone-600/30 to-amber-900/20"
+                },
+                {
+                    "id": 11,
+                    "name": "Capuccino",
+                    "img": "assets/img/milkshake/capuccino.webp",
+                    "badge": "Oferta",
+                    "color": "text-orange-200",
+                    "bg_color": "bg-gradient-to-r from-orange-700/30 to-amber-500/20"
+                },
+                {
+                    "id": 12,
+                    "name": "Cereja",
+                    "img": "assets/img/milkshake/cereja.webp",
+                    "badge": "Oferta",
+                    "color": "text-red-300",
+                    "bg_color": "bg-gradient-to-r from-red-500/20 to-rose-500/20"
+                },
+                {
+                    "id": 13,
+                    "name": "Charge",
+                    "img": "assets/img/milkshake/charge.webp",
+                    "badge": "Oferta",
+                    "color": "text-yellow-200",
+                    "bg_color": "bg-gradient-to-r from-yellow-600/20 to-orange-600/20"
+                },
+                {
+                    "id": 14,
+                    "name": "Chiclete",
+                    "img": "assets/img/milkshake/chiclete.webp",
+                    "badge": "Oferta",
+                    "color": "text-cyan-300",
+                    "bg_color": "bg-gradient-to-r from-cyan-500/20 to-pink-500/20"
+                },
+                {
+                    "id": 15,
+                    "name": "Chocolate",
+                    "img": "assets/img/milkshake/chocolate.webp",
+                    "badge": "Oferta",
+                    "color": "text-amber-200",
+                    "bg_color": "bg-gradient-to-r from-amber-700/30 to-stone-600/20"
+                },
+                {
+                    "id": 16,
+                    "name": "Chocolate Branco",
+                    "img": "assets/img/milkshake/chocolate_branco.webp",
+                    "badge": "Oferta",
+                    "color": "text-slate-200",
+                    "bg_color": "bg-gradient-to-r from-slate-400/20 to-amber-200/20"
+                },
+                {
+                    "id": 17,
+                    "name": "Chocomenta",
+                    "img": "assets/img/milkshake/chocomenta.webp",
+                    "badge": "Oferta",
+                    "color": "text-teal-300",
+                    "bg_color": "bg-gradient-to-r from-teal-500/20 to-stone-500/20"
+                },
+                {
+                    "id": 18,
+                    "name": "Choquito",
+                    "img": "assets/img/milkshake/choquito.webp",
+                    "badge": "Oferta",
+                    "color": "text-orange-200",
+                    "bg_color": "bg-gradient-to-r from-orange-700/30 to-red-500/20"
+                },
+                {
+                    "id": 19,
+                    "name": "Flocos",
+                    "img": "assets/img/milkshake/flocos.webp",
+                    "badge": "Oferta",
+                    "color": "text-sky-200",
+                    "bg_color": "bg-gradient-to-r from-sky-500/20 to-cyan-500/20"
+                },
+                {
+                    "id": 20,
+                    "name": "Confetti",
+                    "img": "assets/img/milkshake/confetti.webp",
+                    "badge": "Oferta",
+                    "color": "text-pink-300",
+                    "bg_color": "bg-gradient-to-r from-pink-500/20 to-yellow-500/20"
+                },
+                {
+                    "id": 21,
+                    "name": "Creme",
+                    "img": "assets/img/milkshake/creme.webp",
+                    "badge": "Oferta",
+                    "color": "text-lime-200",
+                    "bg_color": "bg-gradient-to-r from-lime-500/20 to-emerald-500/20"
+                },
+                {
+                    "id": 22,
+                    "name": "Cupuaçu com Baunilha",
+                    "img": "assets/img/milkshake/cupuacu_c_baunilha.webp",
+                    "badge": "Oferta",
+                    "color": "text-purple-200",
+                    "bg_color": "bg-gradient-to-r from-purple-600/20 to-yellow-400/20"
+                },
+                {
+                    "id": 23,
+                    "name": "Danoninho",
+                    "img": "assets/img/milkshake/danoninho.webp",
+                    "badge": "Oferta",
+                    "color": "text-rose-300",
+                    "bg_color": "bg-gradient-to-r from-rose-500/20 to-red-400/20"
+                },
+                {
+                    "id": 24,
+                    "name": "Doce de Leite",
+                    "img": "assets/img/milkshake/doce_de_leite.webp",
+                    "badge": "Oferta",
+                    "color": "text-yellow-200",
+                    "bg_color": "bg-gradient-to-r from-yellow-600/20 to-orange-500/20"
+                },
+                {
+                    "id": 25,
+                    "name": "Coco",
+                    "img": "assets/img/milkshake/coco.webp",
+                    "badge": "Oferta",
+                    "color": "text-zinc-200",
+                    "bg_color": "bg-gradient-to-r from-zinc-500/20 to-slate-400/20"
+                },
+                {
+                    "id": 26,
+                    "name": "Framboesa",
+                    "img": "assets/img/milkshake/framboesa.webp",
+                    "badge": "Oferta",
+                    "color": "text-pink-300",
+                    "bg_color": "bg-gradient-to-r from-pink-600/20 to-red-500/20"
+                },
+                {
+                    "id": 27,
+                    "name": "Groselha Azul",
+                    "img": "assets/img/milkshake/groselha_azul.webp",
+                    "badge": "Oferta",
+                    "color": "text-blue-300",
+                    "bg_color": "bg-gradient-to-r from-blue-500/20 to-cyan-500/20"
+                },
+                {
+                    "id": 28,
+                    "name": "Nozes",
+                    "img": "assets/img/milkshake/nozes.webp",
+                    "badge": "Oferta",
+                    "color": "text-red-300",
+                    "bg_color": "bg-gradient-to-r from-red-500/20 to-yellow-500/20"
+                },
+                {
+                    "id": 29,
+                    "name": "Leite Condensado",
+                    "img": "assets/img/milkshake/leite_condensado.webp",
+                    "badge": "Oferta",
+                    "color": "text-yellow-100",
+                    "bg_color": "bg-gradient-to-r from-yellow-400/20 to-orange-300/20"
+                },
+                {
+                    "id": 30,
+                    "name": "Negresco",
+                    "img": "assets/img/milkshake/negresco.webp",
+                    "badge": "Oferta",
+                    "color": "text-indigo-200",
+                    "bg_color": "bg-gradient-to-r from-indigo-500/20 to-slate-300/20"
+                },
+                {
+                    "id": 31,
+                    "name": "Menta",
+                    "img": "assets/img/milkshake/menta.webp",
+                    "badge": "Oferta",
+                    "color": "text-green-300",
+                    "bg_color": "bg-gradient-to-r from-green-500/20 to-teal-500/20"
+                },
+                {
+                    "id": 32,
+                    "name": "Milho Verde",
+                    "img": "assets/img/milkshake/milho_verde.webp",
+                    "badge": "Oferta",
+                    "color": "text-lime-300",
+                    "bg_color": "bg-gradient-to-r from-lime-500/20 to-yellow-500/20"
+                },
+                {
+                    "id": 33,
+                    "name": "Morango",
+                    "img": "assets/img/milkshake/morango.webp",
+                    "badge": "Oferta",
+                    "color": "text-red-300",
+                    "bg_color": "bg-gradient-to-r from-red-500/20 to-pink-500/20"
+                },
+                {
+                    "id": 34,
+                    "name": "Napolitano",
+                    "img": "assets/img/milkshake/napolitano.webp",
+                    "badge": "Oferta",
+                    "color": "text-rose-200",
+                    "bg_color": "bg-gradient-to-r from-rose-500/20 to-amber-500/20"
+                },
+                {
+                    "id": 35,
+                    "name": "Leitinho Trufado",
+                    "img": "assets/img/milkshake/leitinho_trufado.webp",
+                    "badge": "Oferta",
+                    "color": "text-slate-300",
+                    "bg_color": "bg-gradient-to-r from-slate-700/30 to-zinc-500/20"
+                },
+                {
+                    "id": 36,
+                    "name": "Maracujá",
+                    "img": "assets/img/milkshake/maracuja.webp",
+                    "badge": "Oferta",
+                    "color": "text-green-300",
+                    "bg_color": "bg-gradient-to-r from-green-500/20 to-emerald-500/20"
+                },
+                {
+                    "id": 37,
+                    "name": "Ovomaltine",
+                    "img": "assets/img/milkshake/ovomaltine.webp",
+                    "badge": "Oferta",
+                    "color": "text-orange-200",
+                    "bg_color": "bg-gradient-to-r from-orange-600/30 to-amber-500/20"
+                },
+                {
+                    "id": 38,
+                    "name": "Ovomaltine com Morango",
+                    "img": "assets/img/milkshake/ovomaltine_c_morango.webp",
+                    "badge": "Oferta",
+                    "color": "text-rose-300",
+                    "bg_color": "bg-gradient-to-r from-rose-500/20 to-orange-600/20"
+                },
+                {
+                    "id": 39,
+                    "name": "Paçoca",
+                    "img": "assets/img/milkshake/pacoca.webp",
+                    "badge": "Oferta",
+                    "color": "text-yellow-200",
+                    "bg_color": "bg-gradient-to-r from-yellow-600/20 to-amber-700/20"
+                },
+                {
+                    "id": 40,
+                    "name": "Papaia",
+                    "img": "assets/img/milkshake/papaia.webp",
+                    "badge": "Oferta",
+                    "color": "text-orange-300",
+                    "bg_color": "bg-gradient-to-r from-orange-500/20 to-red-400/20"
+                },
+                {
+                    "id": 41,
+                    "name": "Passas ao Rum",
+                    "img": "assets/img/milkshake/passas_ao_rum.webp",
+                    "badge": "Oferta",
+                    "color": "text-purple-200",
+                    "bg_color": "bg-gradient-to-r from-purple-700/20 to-amber-600/20"
+                },
+                {
+                    "id": 42,
+                    "name": "Pé de Moleque",
+                    "img": "assets/img/milkshake/pe_de_moleque.webp",
+                    "badge": "Oferta",
+                    "color": "text-amber-300",
+                    "bg_color": "bg-gradient-to-r from-amber-600/20 to-orange-700/20"
+                },
+                {
+                    "id": 43,
+                    "name": "Pinta Língua",
+                    "img": "assets/img/milkshake/pinta_lingua.webp",
+                    "badge": "Oferta",
+                    "color": "text-violet-300",
+                    "bg_color": "bg-gradient-to-r from-violet-500/20 to-cyan-500/20"
+                },
+                {
+                    "id": 44,
+                    "name": "Pistache",
+                    "img": "assets/img/milkshake/pistache.webp",
+                    "badge": "Oferta",
+                    "color": "text-lime-200",
+                    "bg_color": "bg-gradient-to-r from-lime-600/20 to-emerald-500/20"
+                },
+                {
+                    "id": 45,
+                    "name": "Prestígio",
+                    "img": "assets/img/milkshake/prestigio.webp",
+                    "badge": "Oferta",
+                    "color": "text-rose-200",
+                    "bg_color": "bg-gradient-to-r from-rose-500/20 to-stone-600/20"
+                },
+                {
+                    "id": 46,
+                    "name": "Sensação",
+                    "img": "assets/img/milkshake/sensacao.webp",
+                    "badge": "Oferta",
+                    "color": "text-pink-300",
+                    "bg_color": "bg-gradient-to-r from-pink-500/20 to-stone-500/20"
+                },
+                {
+                    "id": 47,
+                    "name": "Tentação",
+                    "img": "assets/img/milkshake/tentacao.webp",
+                    "badge": "Oferta",
+                    "color": "text-red-300",
+                    "bg_color": "bg-gradient-to-r from-red-600/20 to-fuchsia-500/20"
+                },
+                {
+                    "id": 48,
+                    "name": "Uva",
+                    "img": "assets/img/milkshake/uva.webp",
+                    "badge": "Oferta",
+                    "color": "text-purple-300",
+                    "bg_color": "bg-gradient-to-r from-purple-500/20 to-indigo-500/20"
+                },
+                {
+                    "id": 49,
+                    "name": "Kinder Ovo",
+                    "img": "assets/img/milkshake/kinderovo.webp",
+                    "badge": "Oferta",
+                    "color": "text-amber-200",
+                    "bg_color": "bg-gradient-to-r from-amber-700/20 to-yellow-500/20"
+                }
+            ],
+            "especial": [
+                {
+                    "id": 1,
+                    "name": "Brownie",
+                    "img": "assets/img/milkshake/especial/brownie.webp",
+                    "badge": "Oferta",
+                    "color": "text-amber-300",
+                    "bg_color": "bg-gradient-to-r from-amber-500/20 to-orange-500/20"
+                },
+                {
+                    "id": 2,
+                    "name": "Chica Bombom",
+                    "img": "assets/img/milkshake/especial/chica_bombom.webp",
+                    "badge": "Oferta",
+                    "color": "text-pink-300",
+                    "bg_color": "bg-gradient-to-r from-pink-500/20 to-rose-500/20"
+                },
+                {
+                    "id": 3,
+                    "name": "Cookies Preto",
+                    "img": "assets/img/milkshake/especial/cookies_preto.webp",
+                    "badge": "Oferta",
+                    "color": "text-slate-300",
+                    "bg_color": "bg-gradient-to-r from-slate-500/20 to-gray-700/20"
+                },
+                {
+                    "id": 4,
+                    "name": "Farinha Láctea",
+                    "img": "assets/img/milkshake/especial/farinha_lactea.webp",
+                    "badge": "Oferta",
+                    "color": "text-yellow-300",
+                    "bg_color": "bg-gradient-to-r from-yellow-500/20 to-lime-500/20"
+                },
+                {
+                    "id": 5,
+                    "name": "Ferrero Rocher",
+                    "img": "assets/img/milkshake/especial/ferrero_rocher.webp",
+                    "badge": "Oferta",
+                    "color": "text-yellow-200",
+                    "bg_color": "bg-gradient-to-r from-yellow-600/20 to-amber-700/20"
+                },
+                {
+                    "id": 6,
+                    "name": "Floresta Negra",
+                    "img": "assets/img/milkshake/especial/floresta_negra.webp",
+                    "badge": "Oferta",
+                    "color": "text-red-300",
+                    "bg_color": "bg-gradient-to-r from-red-500/20 to-purple-600/20"
+                },
+                {
+                    "id": 7,
+                    "name": "Frutas Vermelhas",
+                    "img": "assets/img/milkshake/especial/frutas_vermelhas.webp",
+                    "badge": "Oferta",
+                    "color": "text-rose-300",
+                    "bg_color": "bg-gradient-to-r from-rose-500/20 to-pink-500/20"
+                },
+                {
+                    "id": 8,
+                    "name": "Leite Ninho",
+                    "img": "assets/img/milkshake/especial/leite_ninho.webp",
+                    "badge": "Oferta",
+                    "color": "text-cyan-200",
+                    "bg_color": "bg-gradient-to-r from-cyan-500/20 to-blue-500/20"
+                },
+                {
+                    "id": 9,
+                    "name": "Nutella",
+                    "img": "assets/img/milkshake/especial/nutella.webp",
+                    "badge": "Oferta",
+                    "color": "text-emerald-300",
+                    "bg_color": "bg-gradient-to-r from-emerald-500/20 to-green-600/20"
+                },
+                {
+                    "id": 10,
+                    "name": "Pão de Mel",
+                    "img": "assets/img/milkshake/especial/pao_de_mel.webp",
+                    "badge": "Oferta",
+                    "color": "text-orange-300",
+                    "bg_color": "bg-gradient-to-r from-orange-500/20 to-red-500/20"
+                },
+                {
+                    "id": 11,
+                    "name": "Suflair",
+                    "img": "assets/img/milkshake/especial/suflair.webp",
+                    "badge": "Oferta",
+                    "color": "text-violet-300",
+                    "bg_color": "bg-gradient-to-r from-violet-500/20 to-indigo-500/20"
+                }
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "name": "Twist",
+        "price": 4.99,
+        "img": "assets/img/twist.webp",
+        "categoria": {
+            "comum": [
+                {
+                    "id": 1,
+                    "name": "Banana com Farinha Láctea e Doce de Leite",
+                    "img": "assets/img/twist/banana_c_farinha_lactea_doce_leite.webp",
+                    "badge": "Oferta",
+                    "color": "text-amber-300",
+                    "bg_color": "bg-gradient-to-r from-amber-500/20 to-yellow-500/20"
+                },
+                {
+                    "id": 2,
+                    "name": "Confetti Trufado",
+                    "img": "assets/img/twist/confetti_trufado.webp",
+                    "badge": "Oferta",
+                    "color": "text-pink-300",
+                    "bg_color": "bg-gradient-to-r from-pink-500/20 to-cyan-500/20"
+                },
+                {
+                    "id": 3,
+                    "name": "Maracujá Trufado",
+                    "img": "assets/img/twist/maracuja_trufado.webp",
+                    "badge": "Oferta",
+                    "color": "text-lime-300",
+                    "bg_color": "bg-gradient-to-r from-lime-500/20 to-yellow-500/20"
+                },
+                {
+                    "id": 4,
+                    "name": "Morango com Sucrilhos",
+                    "img": "assets/img/twist/morango_com_sucrilhos.webp",
+                    "badge": "Oferta",
+                    "color": "text-rose-300",
+                    "bg_color": "bg-gradient-to-r from-rose-500/20 to-orange-500/20"
+                },
+                {
+                    "id": 5,
+                    "name": "Morango Trufado",
+                    "img": "assets/img/twist/morango_trufado.webp",
+                    "badge": "Oferta",
+                    "color": "text-red-300",
+                    "bg_color": "bg-gradient-to-r from-red-500/20 to-pink-500/20"
+                },
+                {
+                    "id": 6,
+                    "name": "Negresco com Doce de Leite",
+                    "img": "assets/img/twist/negresco_com_doce_de_leite.webp",
+                    "badge": "Oferta",
+                    "color": "text-stone-300",
+                    "bg_color": "bg-gradient-to-r from-stone-500/20 to-amber-500/20"
+                },
+                {
+                    "id": 7,
+                    "name": "Negresco Trufado",
+                    "img": "assets/img/twist/negresco_trufado.webp",
+                    "badge": "Oferta",
+                    "color": "text-zinc-300",
+                    "bg_color": "bg-gradient-to-r from-zinc-500/20 to-slate-500/20"
+                },
+                {
+                    "id": 8,
+                    "name": "Ninho Trufado",
+                    "img": "assets/img/twist/ninho_trufado.webp",
+                    "badge": "Oferta",
+                    "color": "text-sky-300",
+                    "bg_color": "bg-gradient-to-r from-sky-500/20 to-indigo-500/20"
+                },
+                {
+                    "id": 9,
+                    "name": "Ovomaltine com Nutella",
+                    "img": "assets/img/twist/ovomaltine_com_nutella.webp",
+                    "badge": "Oferta",
+                    "color": "text-orange-300",
+                    "bg_color": "bg-gradient-to-r from-orange-500/20 to-red-500/20"
+                },
+                {
+                    "id": 10,
+                    "name": "Sucrilhos Trufado",
+                    "img": "assets/img/twist/sucrilhos_trufado.webp",
+                    "badge": "Oferta",
+                    "color": "text-yellow-300",
+                    "bg_color": "bg-gradient-to-r from-yellow-500/20 to-orange-500/20"
+                }
+            ],
+            "especial": []
+        }
+    },
+    {
+        "id": 6,
+        "name": "Mix",
+        "price": 4.99,
+        "img": "assets/img/mix.webp",
+        "categoria": {
+            "comum": [
+                {
+                    "id": 1,
+                    "name": "Kit Kat",
+                    "img": "assets/img/mix/kit_kat.webp",
+                    "badge": "Oferta",
+                    "color": "text-amber-300",
+                    "bg_color": "bg-gradient-to-r from-amber-500/20 to-orange-500/20"
+                },
+                {
+                    "id": 2,
+                    "name": "Ovomaltine",
+                    "img": "assets/img/mix/ovomaltine.webp",
+                    "badge": "Oferta",
+                    "color": "text-pink-300",
+                    "bg_color": "bg-gradient-to-r from-pink-500/20 to-rose-500/20"
+                },
+                {
+                    "id": 3,
+                    "name": "Suflair",
+                    "img": "assets/img/mix/suflair.webp",
+                    "badge": "Oferta",
+                    "color": "text-slate-300",
+                    "bg_color": "bg-gradient-to-r from-slate-500/20 to-gray-700/20"
+                }
+            ],
+            "especial": [
+                {
+                    "id": 1,
+                    "name": "Abacaxi",
+                    "img": "assets/img/mix/abacaxi.webp",
+                    "badge": "Oferta",
+                    "color": "text-fuchsia-300",
+                    "bg_color": "bg-gradient-to-r from-fuchsia-500/20 to-purple-500/20"
+                },
+                {
+                    "id": 2,
+                    "name": "Amora",
+                    "img": "assets/img/mix/amora.webp",
+                    "badge": "Oferta",
+                    "color": "text-emerald-300",
+                    "bg_color": "bg-gradient-to-r from-emerald-500/20 to-lime-500/20"
+                },
+                {
+                    "id": 3,
+                    "name": "Morango",
+                    "img": "assets/img/mix/morango.webp",
+                    "badge": "Oferta",
+                    "color": "text-pink-300",
+                    "bg_color": "bg-gradient-to-r from-pink-500/20 to-sky-500/20"
+                },
+                {
+                    "id": 4,
+                    "name": "Maracujá",
+                    "img": "assets/img/mix/maracuja.webp",
+                    "badge": "Oferta",
+                    "color": "text-violet-300",
+                    "bg_color": "bg-gradient-to-r from-violet-500/20 to-fuchsia-500/20"
+                },
+                {
+                    "id": 5,
+                    "name": "Framboesa",
+                    "img": "assets/img/mix/amora.webp",
+                    "badge": "Oferta",
+                    "color": "text-amber-300",
+                    "bg_color": "bg-gradient-to-r from-amber-500/20 to-orange-500/20"
+                }
+            ]
+        }
+    }
+]

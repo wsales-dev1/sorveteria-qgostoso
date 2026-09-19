@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IceDelights — Classic Ice Cream Parlor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/produto.css">
+    <link rel="stylesheet" href="assets/css/favoritos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,500&family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        purple: {
+                            default: '#7C3AED',
+                            deep: '#5B21B6',
+                        },
+                        pink: {
+                            candy: '#EC4899',
+                            soft: '#FCE7F3',
+                        },
+                        cream: {
+                            default: '#FFF8F3',
+                            light: '#e7f6fc',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Fraunces', 'serif'],
+                        script: ['Pacifico', 'cursive'],
+                        body: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="text-neutral-800 overflow-x-hidden">
+    <div class="bg-banner">
+        <!-- ============ HEADER ============ -->
+        <header class="sticky top-0 z-50 shadow-sm">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-evenly h-20">
+                <a href="#"
+                    class="font-display font-bold italic text-2xl md:text-3xl text-purple-deep flex items-center gap-2">
+                    <img src="assets/img/logo.png" alt="Logo IceDelights" class="w-16 h-16">QGostoso
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-16 font-medium text-md">
+                    <a href="#home" class="text-purple-deep border-b-2 border-pink-candy pb-1">INICIO</a>
+                    <a href="#about" class="hover:text-pink-candy transition">SOBRE</a>
+                    <a href="#populares" class="hover:text-pink-candy transition">POPULARES</a>
+                    <a href="#destaque" class="hover:text-pink-candy transition">DESTAQUE</a>
+                    <a href="#categorias" class="hover:text-pink-candy transition">CATEGORIAS</a>
+                    <a href="#comentarios" class="hover:text-pink-candy transition">COMENTÁRIOS</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- ============ HERO ============ -->
+        <section id="home" class="relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-16 pb-28 grid md:grid-cols-2 gap-10 items-center">
+                <div class="reveal-left reveal-visible">
+                    <p class="font-script text-3xl text-pink-candy mb-2">— Bem-Vindo</p>
+
+                    <h1 class="font-display font-bold text-5xl md:text-7xl leading-[1.05] mb-6">
+                        Sorveteria <span class="text-pink-candy italic">QGostoso</span>
+                    </h1>
+
+                    <p class="text-neutral-700 max-w-md mb-8 text-xl">
+                        Delicie-se com o sabor do nosso sorvete, feito com amor e qualidade.
+                    </p>
+
+                    <a href="#populares"
+                        class="btn-primary inline-flex items-center gap-2 text-white font-medium px-7 py-4 rounded-xl">
+                        Explore Nossos Produtos Variados →
+                    </a>
+                </div>
+
+                <div class="relative reveal-right flex justify-center reveal-visible">
+                    <div class="absolute w-[26rem] h-[26rem] md:w-[30rem] md:h-[30rem] bg-pink-soft rounded-full -z-10">
+                    </div>
+
+                    <img src="assets/img/header.webp" alt="Casquinha de sorvete"
+                        class="float-anim w-[26rem] md:w-[30rem] lg:w-[34rem] drop-shadow-2xl rounded-3xl" />
+                </div>
+            </div>
+
+
+            <!-- wave divider -->
+            <svg class="w-full text-white -mb-1" viewBox="0 0 1440 100" fill="currentColor" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 1080,0 1440,60 L1440,100 L0,100 Z"></path>
+            </svg>
+        </section>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="bg-white pt-12 lg:pt-32 md:pb-12 lg:pb-0 relative">
+        <figure class="mb-0 absolute svg-anim-1" style="right: 32px; bottom: 0;">
+            <img src="assets/img/svg/relive-rightbottomimage.png" alt="image" class="img-fluid">
+        </figure>
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-14 items-center px-4 md:px-0">
+            <!-- Conteúdo de texto - agora vem primeiro em mobile -->
+            <div class="order-1 md:order-2 reveal-right p-4 md:p-6 reveal-visible">
+                <h2 class="font-display font-bold text-4xl md:text-5xl mb-3">
+                    Reviva as doces lembranças dos <span class="text-pink-candy italic">sorvetes clássicos.</span>
+                </h2>
+
+                <p class="text-neutral-700 max-w-md mb-6 md:mb-8 text-base sm:text-lg">
+                    De chocolate, baunilha cremosa ou misto, descubra nosso menu de criações clássicas de sorvete feitas
+                    com paixão.
+                </p>
+
+                <a href="#categorias"
+                    class="btn-primary inline-flex items-center gap-2 text-white font-medium px-6 sm:px-7 py-3 sm:py-4 rounded-full text-sm sm:text-base">
+                    Explore Nossos Produtos →
+                </a>
+
+                <figure
+                    class="relive-triangle mb-0 svg-anim-2 mt-4 md:mt-0 right-[20px] absolute hidden sm:block top-0">
+                    <img src="assets/img/svg/relive-triangle.png" alt="image" class="img-fluid w-12 sm:w-auto">
+                </figure>
+            </div>
+
+            <!-- Imagem - agora vem depois em mobile -->
+            <div class="order-2 md:order-1 relative reveal-left flex justify-center">
+                <div class="relive">
+                    <figure class="relive-circle mb-0 absolute circle-position">
+                        <img src="assets/img/svg/relive-circle.png" alt="image" class="float-slow w-12 sm:w-auto">
+                    </figure>
+                    <figure class="relive-doted mb-0 absolute doted-position" style="top: -20px; right: 0;">
+                        <img src="assets/img/svg/relive-doted.png" alt="image" class="float-slow w-8 sm:w-auto">
+                    </figure>
+                </div>
+
+                <div
+                    class="absolute xs:w-[20rem] xs:h-[20rem] sm:w-[24rem] sm:h-[24rem] md:w-[26rem] md:h-[26rem] lg:w-[38rem] lg:h-[38rem] bg-cream-light rounded-full -z-10 circle-anim">
+                </div>
+
+                <img src="assets/img/relive-image.png" alt="Mulher comendo sorvete"
+                    class="rounded-[2rem] w-[20rem] sm:w-[26rem] md:w-[30rem] lg:w-[36rem] drop-shadow-2xl" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CLASSIC FAVORITES CAROUSEL ============ -->
+    <!-- <div class="bg-banner relative" id="popular">
+        <section id="favorites" class="py-16 md:py-24 lg:py-36">
+            <div class="max-w-[84rem] mx-auto px-4 sm:px-6 lg:px-10">
+                <div class="text-center mb-8 md:mb-14 ">
+                    <h2 class="font-display font-bold text-2xl sm:text-4xl md:text-5xl mb-3">
+                        Nossos <span class="text-pink-candy">Clássicos</span> Favoritos 🌟
+                    </h2>
+                    <p class="text-neutral-500 text-base sm:text-xl md:text-2xl px-4">
+                        Confira os produtos mais populares entre nossos clientes.
+                    </p>
+                </div>
+
+                <div class="overflow-hidden relative">
+                    <div id="favTrack" class="carousel-track flex transition-transform duration-500 ease-in-out">
+                        slide groups injected also work statically; using per-card layout 
+                    </div>
+                </div>
+
+                Dots de Navegação 
+                <div id="favDots" class="flex justify-center gap-2 mt-6 md:mt-10"></div>
+            </div>
+        </section>
+    </div> -->
+
+
+    <!-- ============ CLASSIC FAVORITES CAROUSEL ============ -->
+    <section id="populares" class="max-w-6xl mx-auto px-6 sm:px-6 py-28">
+        <div class="flex items-end justify-center mb-14 gap-4">
+            <div class="text-center">
+                <h2 class="font-display font-bold text-4xl md:text-5xl mb-3">
+                    Nossos <span class="text-pink-candy">Clássicos</span> Favoritos 🌟
+                </h2>
+                <p class="text-neutral-500 text-lg sm:text-xl px-4">
+                    Confira os produtos mais populares entre nossos clientes.
+                </p>
+            </div>
+        </div>
+
+        <div class="overflow-hidden py-4">
+            <div id="track" class="scoop-track pb-4"></div>
+        </div>
+
+        <div id="dots" class="flex justify-center gap-2 mt-8"></div>
+    </section>
+
+
+    <!-- ============ SUMMER SPECIAL BANNER ============ -->
+    <section class="reveal reveal-bg-gradient flex justify-center md:pt-20 pt-12" id="destaque">
+        <div class="grid md:grid-cols-2 min-h-[360px] desconto">
+            <div class="text-white flex flex-col justify-center pl-8 md:pl-16">
+                <h3 class="font-display font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
+                    <span id="texto-oferta"></span> <span class="text-pink-candy">Especial!</span>
+                </h3>
+                <p class="text-white/80 mb-8 text-lg sm:text-2xl" id="texto-oferta-descricao"></p>
+                <div class="flex items-center gap-4 flex-wrap">
+                    <span href="#"
+                        class="bg-pink-candy hover:bg-pink-600 transition text-white font-medium px-6 py-3 rounded-full inline-flex items-center gap-2"
+                        id="botao-oferta">Aproveitar Oferta</span>
+                </div>
+            </div>
+            <div class="relative flex items-center justify-center py-16">
+                <span
+                    class="absolute left-8 top-8 bg-yellow-400 text-purple-deep font-bold w-16 h-16 rounded-full flex items-center justify-center text-sm rotate-[-12deg] spin-slow border-4 border-white"
+                    id="desconto-oferta"></span>
+                <img alt="Sundae misto" class="w-full h-full float-anim" id="img-oferta">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ CATEGORIES ============ -->
+    <section id="categorias" class="bg-white bg-banner">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-28">
+            <div class="text-center mb-14 reveal">
+                <h2 class="font-display font-bold text-4xl md:text-5xl mb-3">Explore Mais Dos <span
+                        class="text-pink-candy">Produtos</span></h2>
+                <p class="text-neutral-500 text-lg sm:text-xl px-4">Navegue pelas nossas diferentes categorias para
+                    encontrar seus sorvetes
+                    favoritos.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div id="catGrid" class="contents"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section id="comentarios" class="py-24 bg-gradient-to-b from-white to-pink-soft/40 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 text-center relative reveal">
+            <h2 class="font-display font-bold text-4xl md:text-5xl mb-14">Hear from Our <span
+                    class="text-pink-candy">Happy</span><br>Ice Cream <span class="text-pink-candy">Lovers</span></h2>
+
+            <!-- floating avatars -->
+            <img src="https://placehold.co/70x70/f3e8ff/7C3AED?text=A"
+                class="hidden md:block absolute -left-4 top-6 w-16 h-16 rounded-full border-4 border-white shadow-lg float-slow">
+            <img src="https://placehold.co/70x70/fce7f3/EC4899?text=B"
+                class="hidden md:block absolute right-0 top-2 w-16 h-16 rounded-full border-4 border-white shadow-lg float-anim">
+            <img src="https://placehold.co/70x70/fef3c7/f59e0b?text=C"
+                class="hidden md:block absolute left-4 bottom-10 w-16 h-16 rounded-full border-4 border-white shadow-lg float-anim">
+            <img src="https://placehold.co/70x70/dbeafe/3b82f6?text=D"
+                class="hidden md:block absolute right-8 bottom-16 w-14 h-14 rounded-full border-4 border-white shadow-lg float-slow">
+
+            <div id="testiTrack" class="carousel-track">
+                <div class="carousel-slide px-4">
+                    <p class="text-neutral-500 max-w-xl mx-auto mb-6">
+                        "Beatae vitae dicta sunt explicabo. Nemo enim ipsum voluptatem quia voluptas as pernatur aut
+                        odit aut fugit, sed beatae vitae dicta ripiscing elit, sed do eiusmod tempor incidunt. Labore et
+                        dolore magna aliqua ut enim ad minim adipiscing elit, sed do eiusmod tempor incidunt aut
+                        labore."
+                    </p>
+                    <img src="https://placehold.co/60x60/f3e8ff/7C3AED?text=K"
+                        class="w-14 h-14 rounded-full mx-auto mb-3">
+                    <p class="font-semibold text-pink-candy">Kevin Andrew</p>
+                    <p class="text-sm text-neutral-400 mb-2">Happy Customer</p>
+                    <p class="text-yellow-400">★★★★★</p>
+                </div>
+                <div class="carousel-slide px-4">
+                    <p class="text-neutral-500 max-w-xl mx-auto mb-6">
+                        "The classic vanilla ice cream took me right back to my childhood summers. Rich, creamy and
+                        never too sweet — exactly how ice cream should be made."
+                    </p>
+                    <img src="https://placehold.co/60x60/fce7f3/EC4899?text=M"
+                        class="w-14 h-14 rounded-full mx-auto mb-3">
+                    <p class="font-semibold text-pink-candy">Maria Souza</p>
+                    <p class="text-sm text-neutral-400 mb-2">Happy Customer</p>
+                    <p class="text-yellow-400">★★★★★</p>
+                </div>
+                <div class="carousel-slide px-4">
+                    <p class="text-neutral-500 max-w-xl mx-auto mb-6">
+                        "Best sundae in town, hands down. The staff is friendly and the shop always smells like waffle
+                        cones fresh off the iron."
+                    </p>
+                    <img src="https://placehold.co/60x60/fef3c7/f59e0b?text=J"
+                        class="w-14 h-14 rounded-full mx-auto mb-3">
+                    <p class="font-semibold text-pink-candy">João Pedro</p>
+                    <p class="text-sm text-neutral-400 mb-2">Happy Customer</p>
+                    <p class="text-yellow-400">★★★★★</p>
+                </div>
+            </div>
+
+            <div id="testiDots" class="flex justify-center gap-2 mt-8"></div>
+        </div>
+    </section>
+
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="bg-purple-deep text-white/80 pt-16 pb-6 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+            <div>
+                <p class="font-script text-2xl text-white mb-4">🍦 IceDelights</p>
+                <p class="text-sm text-white/60">Savor the taste of traditional ice cream made with love and quality
+                    ingredients.</p>
+                <div class="flex gap-3 mt-5">
+                    <a href="#"
+                        class="w-9 h-9 rounded-full bg-white/10 hover:bg-pink-candy transition flex items-center justify-center">f</a>
+                    <a href="#"
+                        class="w-9 h-9 rounded-full bg-white/10 hover:bg-pink-candy transition flex items-center justify-center">x</a>
+                    <a href="#"
+                        class="w-9 h-9 rounded-full bg-white/10 hover:bg-pink-candy transition flex items-center justify-center">in</a>
+                </div>
+            </div>
+            <div>
+                <p class="text-white font-semibold mb-4">Navigation</p>
+                <ul class="space-y-2 text-sm text-white/60">
+                    <li><a href="#" class="hover:text-white transition">Home</a></li>
+                    <li><a href="#" class="hover:text-white transition">About</a></li>
+                    <li><a href="#" class="hover:text-white transition">Shop</a></li>
+                    <li><a href="#" class="hover:text-white transition">Products</a></li>
+                    <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                    <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="text-white font-semibold mb-4">Address</p>
+                <p class="text-sm text-white/60 mb-3">121 King Street Melbourne, 3000, Australia</p>
+                <p class="text-sm text-white/60">info@icedelights.com</p>
+            </div>
+            <div>
+                <p class="text-white font-semibold mb-4">Got Questions? Call us 24/7</p>
+                <p class="text-lg text-white font-semibold">+5689 2589 6325</p>
+            </div>
+        </div>
+        <div class="border-t border-white/10 pt-6 text-center text-xs text-white/50">
+            Copyright © 2026 IceDelights. All rights reserved.
+        </div>
+
+        <button id="toTop" aria-label="Voltar ao topo"
+            class="fixed bottom-6 right-6 bg-pink-candy hover:bg-pink-600 transition text-white w-11 h-11 rounded-xl shadow-lg flex items-center justify-center">
+            ↑
+        </button>
+    </footer>
+
+
+    <!-- Modal Fullscreen -->
+    <div id="modalOverlay"
+        class="fixed inset-0 z-50 opacity-0 pointer-events-none transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]">
+
+        <!-- Background com blur e gradiente -->
+        <div class="absolute inset-0 bg-black/90 backdrop-blur-2xl"></div>
+
+        <!-- Container Principal -->
+        <div class="relative w-full h-full flex flex-col transform translate-y-8 scale-95 transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
+            id="modalContainer">
+
+            <!-- Header com Botão Voltar -->
+            <div class="flex-shrink-0 px-4 pt-6 pb-4 bg-gradient-to-b from-transparent to-transparent">
+                <div class="flex items-center gap-4 max-w-7xl mx-auto w-full justify-between text-center">
+                    <h2 class="text-2xl font-bold text-white flex-1" id="pageTitle">Categorias</h2>
+                </div>
+            </div>
+
+            <!-- Conteúdo com Scroll -->
+            <div class="flex-1 overflow-y-auto px-4 pb-8 scroll-smooth" id="contentContainer">
+                <div class="max-w-7xl mx-auto">
+                    <div class=" group cursor-pointer">
+                        <div class="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-green-500/20 to-lime-500/20 border border-white/10 
+                            backdrop-blur-sm p-6 transition-all duration-500 hover:scale-[1.02] hover:border-white/30">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-green-600/10 to-lime-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+                            <div class="relative z-10">
+                                <div class="flex items-center">
+                                    <div class="w-16 h-10 rounded-2xl bg-gradient-to-br from-teal-700 to-green-700 flex items-center justify-center text-xl shadow-2xl
+                                            group-hover:scale-110 transition-transform duration-500 mr-4">
+                                        😃
+                                    </div>
+                                    <p class="text-white text-sm">O produto pode ser personalizado conforme sua
+                                        preferência.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute -bottom-20 -left-20 w-40 h-40 bg-violet-500/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tela 1: Categorias -->
+                    <div id="categoriesView" class="animate-fade-in">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
+
+                            <!-- Card Categoria Comum -->
+                            <div class="category-card group cursor-pointer" data-category="comum">
+                                <div
+                                    class="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-white/10 backdrop-blur-sm p-6 transition-all duration-500 hover:scale-[1.02] hover:border-white/30">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-cyan-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                    </div>
+                                    <div class="relative z-10">
+                                        <div
+                                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-4xl shadow-2xl mb-4 group-hover:scale-110 transition-transform duration-500">
+                                            🍦
+                                        </div>
+                                        <h3 class="text-2xl font-bold text-white mb-2">Comum - <span
+                                                id="preco-cascao-comum" class="text-pink-candy font-semibold"></span>
+                                        </h3>
+                                        <p class="text-white/60 text-sm">
+                                            <span id="total-produtos-comum" class="font-bold mr-1"></span>produtos
+                                            disponíveis
+                                        </p>
+                                        <div class="mt-4 flex items-center text-blue-100 group-hover:text-blue-300 transition-colors bg-white/10 p-4 rounded-2xl 
+                                        backdrop-blur-sm border border-white/20 justify-between" id="btnProdutoComum">
+                                            <span class="text-sm font-medium">Ver todos</span>
+                                            <span class="text-sm font-medium text-right">➜</span>
+                                        </div>
+                                    </div>
+                                    <!-- <div
+                                        class="absolute -top-20 -right-20 w-40 h-40 bg-blue-500/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700">
+                                    </div> -->
+                                </div>
+                            </div>
+
+                            <!-- Card Categoria Especial -->
+                            <div class="category-card group cursor-pointer" data-category="especial">
+                                <div
+                                    class="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-amber-500/20 to-pink-500/20 border border-white/10 backdrop-blur-sm p-6 transition-all duration-500 hover:scale-[1.02] hover:border-white/30">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-br from-amber-600/10 to-pink-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                    </div>
+                                    <div class="relative z-10">
+                                        <div
+                                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-500 to-pink-500 flex items-center justify-center text-4xl shadow-2xl mb-4 group-hover:scale-110 transition-transform duration-500">
+                                            🍨
+                                        </div>
+                                        <h3 class="text-2xl font-bold text-white mb-2">Especial - <span
+                                                id="preco-cascao-especial" class="text-blue-500 font-semibold"></span>
+                                        </h3>
+                                        <p class="text-white/60 text-sm">
+                                            <span id="total-produtos-especial" class="font-bold mr-1"></span>produtos
+                                            premium
+                                        </p>
+                                        <div class="mt-4 flex items-center text-blue-100 group-hover:text-blue-300 transition-colors bg-white/10 p-4 rounded-2xl 
+                                        backdrop-blur-sm border border-white/20 justify-between"
+                                            id="btnProdutoEspecial">
+                                            <span class="text-sm font-medium">Ver todos</span>
+                                            <span class="text-sm font-medium text-right">➜</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="absolute -bottom-20 -left-20 w-40 h-40 bg-amber-500/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Tela 2: Lista de Produtos (inicialmente oculta) -->
+                    <div id="productsView" class="hidden animate-slide-up">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-4" id="productsGrid">
+                            <!-- Produtos serão injetados via JS com squircle -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Footer com Indicador -->
+            <div
+                class="flex-shrink-0 p-4 bg-gradient-to-t from-black/50 to-transparent backdrop-blur-xl border-t border-white/10">
+                <div class="flex items-center gap-4 w-full justify-end">
+                    <button id="backBtn" class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-xl border border-white/10 text-blue-300 hover:bg-white/20 transition-all duration-300 
+                        hover:scale-110 active:scale-95 flex items-center justify-center group rotate-180 ">
+                        ➜
+                    </button>
+                    <button id="closeModalBtn"
+                        class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-xl border border-white/10 text-white hover:bg-white/20 transition-all duration-300 hover:rotate-90 active:scale-95 flex items-center justify-center">
+                        ❌
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SVG para Squircle Clip Path -->
+    <svg width="0" height="0" viewBox="0 0 1 1" style="position:absolute">
+        <clipPath id="squircleClip" clipPathUnits="objectBoundingBox">
+            <path d="M 0,0.5 C 0,0 0,0 0.5,0 S 1,0 1,0.5 1,1 0.5,1 0,1 0,0.5" />
+        </clipPath>
+    </svg>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/carrossel.js"></script>
+</body>
+
+</html>

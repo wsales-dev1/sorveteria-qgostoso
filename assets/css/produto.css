@@ -1,0 +1,246 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.rainbow {
+    position: relative;
+    z-index: 0;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -2;
+        left: -50%;
+        top: -50%;
+        width: 200%;
+        height: 200%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: linear-gradient(60deg,
+                rgb(255 177 0),
+                rgb(255 177 0),
+                rgb(255 177 0 / 69%),
+                rgb(255 255 255 / 16%),
+                rgb(228 255 0 / 1%),
+                rgb(255 200 0 / 69%),
+                rgb(255 177 0),
+                rgb(255 177 0));
+        animation: rotate 3s linear infinite;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 4px;
+        top: 4px;
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
+        background: white;
+        border-radius: 5px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* ============================================
+           SQUIRCLE CARDS
+           ============================================ */
+.product-squircle {
+    clip-path: url(#squircleClip);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+    /* background: rgba(255, 255, 255, 0.05); */
+    backdrop-filter: blur(10px);
+    border: 4px solid rgba(255, 255, 255, 0.08);
+}
+
+.product-squircle::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    clip-path: url(#squircleClip);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), #000);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.product-squircle:hover::before {
+    opacity: 1;
+}
+
+.product-squircle .squircle-border {
+    position: absolute;
+    inset: 0;
+    clip-path: url(#squircleClip);
+    scale: 1;
+    opacity: 0;
+    /* background: linear-gradient(135deg, #8b5cf6, #ec4899); */
+    box-shadow: inset 10px 10px 30px rgb(255 255 255 / 4%), inset -10px -10px 30px rgb(255 0 126);
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    pointer-events: none;
+}
+
+.product-squircle:hover .squircle-border {
+    scale: 1.08;
+    opacity: 1;
+}
+
+.product-squircle .product-content {
+    position: relative;
+    z-index: 2;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 200px;
+}
+
+.product-squircle .product-icon {
+    font-size: 3.5rem;
+    margin-bottom: 0.75rem;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.product-squircle:hover .product-icon {
+    transform: scale(1.15) rotate(-5deg);
+}
+
+/* Scroll personalizado */
+#contentContainer::-webkit-scrollbar {
+    width: 4px;
+}
+
+#contentContainer::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+#contentContainer::-webkit-scrollbar-thumb {
+    background: rgba(139, 92, 246, 0.5);
+    border-radius: 10px;
+}
+
+/* Transições suaves */
+.category-card {
+    transition: all 0.3s ease;
+}
+
+.product-item {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.product-item.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Badge estilo squircle */
+.badge-squircle {
+    clip-path: url(#squircleClip);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), #000);
+    padding: 0.25rem 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Efeito de brilho nos cards */
+.glow-effect {
+    position: relative;
+}
+
+.glow-effect::after {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 2rem;
+    background: linear-gradient(135deg, #8b5cf6, #ec4899, #8b5cf6);
+    background-size: 300% 300%;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.5s ease;
+    animation: gradientMove 3s ease infinite;
+}
+
+.glow-effect:hover::after {
+    opacity: 1;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* .product-icon {
+    filter: drop-shadow(2px 0px 0px #fff) drop-shadow(-2px 0px 0px #fff) drop-shadow(0px 2px 0px #fff) drop-shadow(0px -2px 0px #fff);
+} */
