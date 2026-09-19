@@ -145,3 +145,90 @@ section.addEventListener("mouseenter", () => clearInterval(timer));
 section.addEventListener("mouseleave", resetAutoplay);
 
 render(false);
+
+(function () {
+    const track = document.getElementById('testiTrack');
+    const slides = track.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.dot-coment');
+
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    let autoplayInterval;
+
+    function updateCarousel() {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('bg-pink-candy', i === currentIndex);
+            dot.classList.toggle('bg-neutral-300', i !== currentIndex);
+            dot.classList.toggle('w-6', i === currentIndex); // dot ativo mais largo
+        });
+    }
+
+    function goToSlide(index) {
+        currentIndex = (index + totalSlides) % totalSlides;
+        updateCarousel();
+    }
+
+    function nextSlide() {
+        goToSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+        goToSlide(currentIndex - 1);
+    }
+
+    // Botões
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+        resetAutoplay();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+        resetAutoplay();
+    });
+
+    // Dots
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            goToSlide(parseInt(dot.dataset.index));
+            resetAutoplay();
+        });
+    });
+
+    // Autoplay
+    function startAutoplay() {
+        autoplayInterval = setInterval(nextSlide, 5000);
+    }
+
+    function resetAutoplay() {
+        clearInterval(autoplayInterval);
+        startAutoplay();
+    }
+
+    // Suporte a swipe (touch)
+    let startX = 0;
+    let isDragging = false;
+
+    track.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+        isDragging = true;
+    });
+
+    track.addEventListener('touchend', (e) => {
+        if (!isDragging) return;
+        const endX = e.changedTouches[0].clientX;
+        const diff = startX - endX;
+
+        if (Math.abs(diff) > 50) {
+            diff > 0 ? nextSlide() : prevSlide();
+            resetAutoplay();
+        }
+        isDragging = false;
+    });
+
+    // Inicializa
+    updateCarousel();
+    startAutoplay();
+})();

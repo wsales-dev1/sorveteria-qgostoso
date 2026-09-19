@@ -227,7 +227,8 @@
             <div class="text-center mb-14 reveal">
                 <h2 class="font-display font-bold text-4xl md:text-5xl mb-3">Explore Mais Dos <span
                         class="text-pink-candy">Produtos</span></h2>
-                <p class="text-neutral-500 text-lg sm:text-xl px-4">Navegue pelas nossas diferentes categorias para
+                <p class="text-neutral-500 text-lg sm:text-xl px-4"><span class="font-bold text-pink-candy">Navegue
+                        👇🏻</span> pelas nossas diferentes categorias para
                     encontrar seus sorvetes
                     favoritos.</p>
             </div>
@@ -242,8 +243,9 @@
     <!-- ============ TESTIMONIALS ============ -->
     <section id="comentarios" class="py-24 bg-gradient-to-b from-white to-pink-soft/40 relative overflow-hidden">
         <div class="max-w-4xl mx-auto px-6 text-center relative reveal">
-            <h2 class="font-display font-bold text-4xl md:text-5xl mb-14">Hear from Our <span
-                    class="text-pink-candy">Happy</span><br>Ice Cream <span class="text-pink-candy">Lovers</span></h2>
+            <h2 class="font-display font-bold text-4xl md:text-5xl mb-14">As pessoas estão <span
+                    class="text-pink-candy">Satisfeitas </span> <br><span class="text-pink-candy">
+                    Amando</span> os nossos produtos.</h2>
 
             <!-- floating avatars -->
             <img src="https://placehold.co/70x70/f3e8ff/7C3AED?text=A"
@@ -255,13 +257,68 @@
             <img src="https://placehold.co/70x70/dbeafe/3b82f6?text=D"
                 class="hidden md:block absolute right-8 bottom-16 w-14 h-14 rounded-full border-4 border-white shadow-lg float-slow">
 
-            <div id="testiTrack" class="carousel-track">
+            <div class="relative overflow-hidden">
+                <div id="testiTrack" class="carousel-track flex">
+                    <div class="carousel-slide px-4 text-center">
+                        <p class="text-neutral-500 max-w-xl mx-auto mb-6">
+                            MilkShakes maravilhosos, em especial o de ninho com Nutella. Amei o atendimento e a
+                            qualidade do produto. Recomendo!🍦🙌
+                        </p>
+                        <img src="https://placehold.co/60x60/f3e8ff/7C3AED?text=A"
+                            class="w-14 h-14 rounded-full mx-auto mb-3">
+                        <p class="font-semibold text-pink-candy">Adriana</p>
+                        <p class="text-yellow-400">⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="carousel-slide px-4 text-center">
+                        <p class="text-neutral-500 max-w-xl mx-auto mb-6">
+                            Atendimento excepcional, produtos de ótima qualidade sem falar no sabor que é o melhor que
+                            já provei. Depois que conheci a Sorveteria e experimentei os produtos não consigo tomar
+                            Shake em outro lugar. Vcs estão de parabéns, continuem assim. Deus abençoe
+                            Grandemente.😍🥤
+                        </p>
+                        <img src="https://placehold.co/60x60/fce7f3/EC4899?text=M"
+                            class="w-14 h-14 rounded-full mx-auto mb-3">
+                        <p class="font-semibold text-pink-candy">Maria</p>
+                        <p class="text-yellow-400">⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="carousel-slide px-4 text-center">
+                        <p class="text-neutral-500 max-w-xl mx-auto mb-6">
+                            Experiência maravilhosa, sorvete delicioso há muitas opções de sorvetes deliciosos para
+                            escolher, atendimento nota 1000, ambiente super aconchegante, simplesmente perfeito. Vale
+                            muito uma visita, voltaremos sempre. 👌🏻🍨👏🏻
+                        </p>
+                        <img src="https://placehold.co/60x60/fef3c7/f59e0b?text=P"
+                            class="w-14 h-14 rounded-full mx-auto mb-3">
+                        <p class="font-semibold text-pink-candy">Pedro</p>
+                        <p class="text-yellow-400">⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Indicadores (dots) -->
+            <div class="flex justify-center gap-2 mt-8" id="dotsContainer">
+                <button class="dot-coment w-3 h-3 rounded-full transition-all" data-index="0"></button>
+                <button class="dot-coment w-3 h-3 rounded-full transition-all" data-index="1"></button>
+                <button class="dot-coment w-3 h-3 rounded-full transition-all" data-index="2"></button>
+            </div>
+
+            <!-- Botões de navegação -->
+            <div class="flex justify-center gap-4 mt-6 hidden ">
+                <button id="prevBtn"
+                    class="px-4 py-2 rounded-full bg-white shadow hover:bg-neutral-100 transition text-neutral-600">
+                    &#8592; Anterior
+                </button>
+                <button id="nextBtn"
+                    class="px-4 py-2 rounded-full bg-pink-candy text-white shadow hover:opacity-90 transition">
+                    Próximo &#8594;
+                </button>
+            </div>
+
+            <!-- <div id="testiTrack" class="carousel-track">
                 <div class="carousel-slide px-4">
                     <p class="text-neutral-500 max-w-xl mx-auto mb-6">
-                        "Beatae vitae dicta sunt explicabo. Nemo enim ipsum voluptatem quia voluptas as pernatur aut
-                        odit aut fugit, sed beatae vitae dicta ripiscing elit, sed do eiusmod tempor incidunt. Labore et
-                        dolore magna aliqua ut enim ad minim adipiscing elit, sed do eiusmod tempor incidunt aut
-                        labore."
+                        MilkShakes maravilhosos, em especial o de ninho com Nutella. Amei o atendimento e a qualidade
+                        do produto. Recomendo!
                     </p>
                     <img src="https://placehold.co/60x60/f3e8ff/7C3AED?text=K"
                         class="w-14 h-14 rounded-full mx-auto mb-3">
@@ -271,8 +328,9 @@
                 </div>
                 <div class="carousel-slide px-4">
                     <p class="text-neutral-500 max-w-xl mx-auto mb-6">
-                        "The classic vanilla ice cream took me right back to my childhood summers. Rich, creamy and
-                        never too sweet — exactly how ice cream should be made."
+                        Atendimento excepcional, produtos de ótima qualidade sem falar no sabor que é o melhor que já
+                        provei. Depois que conheci a Sorveteria e experimentei os produtos não consigo tomar Shake em
+                        outro lugar. Vcs estão de parabéns continuem assim. Deus abençoe Grandemente.😍🥤🍦🍫🙌
                     </p>
                     <img src="https://placehold.co/60x60/fce7f3/EC4899?text=M"
                         class="w-14 h-14 rounded-full mx-auto mb-3">
@@ -282,8 +340,9 @@
                 </div>
                 <div class="carousel-slide px-4">
                     <p class="text-neutral-500 max-w-xl mx-auto mb-6">
-                        "Best sundae in town, hands down. The staff is friendly and the shop always smells like waffle
-                        cones fresh off the iron."
+                        Experiência maravilhosa, sorvete delicioso há muitas opções de sorvetes deliciosos para
+                        escolher, atendimento nota 1000, ambiente super aconchegante, simplesmente perfeito. Vale muito
+                        uma visita, voltaremos sempre. 👌🏻🍨👏🏻
                     </p>
                     <img src="https://placehold.co/60x60/fef3c7/f59e0b?text=J"
                         class="w-14 h-14 rounded-full mx-auto mb-3">
@@ -291,9 +350,8 @@
                     <p class="text-sm text-neutral-400 mb-2">Happy Customer</p>
                     <p class="text-yellow-400">★★★★★</p>
                 </div>
-            </div>
+            </div> -->
 
-            <div id="testiDots" class="flex justify-center gap-2 mt-8"></div>
         </div>
     </section>
 
